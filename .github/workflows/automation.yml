@@ -31,5 +31,5 @@ jobs:
         run: python run.py ${{ secrets.READWISE_TOKEN }} ${{ secrets.ZOTERO_KEY }} ${{ secrets.ZOTERO_ID }} --include_notes='y' 
         
       - name: 🚀 Run Automation on group lib
-        run: python run.py ${{ secrets.READWISE_TOKEN }} ${{ secrets.ZOTERO_KEY }} ${{ secrets.ZOTERO_GROUPID }} --include_notes='y' --library_type="group" 
+        run: python run.py ${{ secrets.READWISE_TOKEN }} ${{ secrets.ZOTERO_GROUPKEY }} ${{ secrets.ZOTERO_GROUPID }} --include_notes='y' --library_type="group" 
         
